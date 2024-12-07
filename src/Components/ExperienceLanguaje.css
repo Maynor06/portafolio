@@ -1,0 +1,40 @@
+.experience-With{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.title-experience{
+    width: 220px;
+    height: 30px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.languajes{
+    margin-top: 2rem;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.languajes li{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .languajes{
+        width: 90%;
+    }
+  }
+

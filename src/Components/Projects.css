@@ -1,0 +1,35 @@
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+}
+
+.projects h2{
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .projects{
+        width: 80%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .projects{
+        width: 90%;
+    }
+  }

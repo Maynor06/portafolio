@@ -1,0 +1,106 @@
+
+.About{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.About img{
+    width: 260px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.slogan{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+strong{
+    color: #FFD700;
+}
+
+.slogan strong{
+    color: #32CD32;
+}
+
+
+.buttons-About{
+    width: 30%;
+    height: 64px;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.buttons-About button{
+    width: 50%;
+    height: 60px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buttons-About a{
+    width: 50%;
+    height: 60px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-About button:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.buttons-About a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+.button-contact{
+    background-color: aliceblue;
+    color: black;
+}
+
+.button-contact:active{
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.button-cv{
+    background-color: transparent;
+    border: 2px solid white;
+    color: aliceblue;
+}
+
+.button-cv:active{
+    background-color: aliceblue;
+    color: black;
+}
+
+@media (max-width: 450px) {
+    .buttons-About{
+        width: 75%;
+    }
+  }
+
+
