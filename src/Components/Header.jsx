@@ -30,7 +30,7 @@ const Header = () => {
                 <button className='hidden close' onClick={handleMenuClose} ><Close/></button>
                 <li> <a href="#about" onClick={handleMenuClose} >Acerca de mí</a></li>
                 <li> <a href="#projects" onClick={handleMenuClose} >Projectos</a></li>                
-                <li><a onClick={handleContact} >Contacto</a> </li>
+                <li className='cursor-pointer ' ><a onClick={handleContact} >Contacto</a> </li>
             </ul>
         </div>
     )
