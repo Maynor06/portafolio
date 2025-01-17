@@ -5,7 +5,7 @@ const ExperienceLanguaje = () => {
     
     return(
         <div className="experience-With">
-            <h2 className="title-experience">Experiencia con</h2>
+            <h2 className="title-experience">Experience with</h2>
             <ul className="languajes">
                 <li><Javascript/></li>
                 <li><React/> </li>

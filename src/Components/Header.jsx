@@ -26,11 +26,11 @@ const Header = () => {
             <img src="logoMd.png" alt="logo Personal"/>
             <button className='buttonMenu hidden' onClick={handleMenuShow} ><Menu/> </button>
             <ul className={menuShow
-                ? 'sections ': 'sections2' } >
+                ? 'sections ': 'sections2' } >      
                 <button className='hidden close' onClick={handleMenuClose} ><Close/></button>
-                <li> <a href="#about" onClick={handleMenuClose} >Acerca de mí</a></li>
-                <li> <a href="#projects" onClick={handleMenuClose} >Projectos</a></li>                
-                <li className='cursor-pointer ' ><a onClick={handleContact} >Contacto</a> </li>
+                <li> <a href="#about" onClick={handleMenuClose} >About me</a></li>
+                <li> <a href="#projects" onClick={handleMenuClose} >Projects</a></li>                
+                <li className='cursor-pointer ' ><a onClick={handleContact} >Contact me</a> </li>
             </ul>
         </div>
     )
