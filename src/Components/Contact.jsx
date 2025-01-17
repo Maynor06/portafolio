@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
 import { Arrow } from "./iconos/icons";
 import { useNavigate } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
@@ -112,7 +111,7 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-center gap-4 text-white p-10 " >
           <h2> the email is sent with success!! :3 </h2>
           <div className="flex gap-4 " >
-            <button onClick={() => setModalShow(false)} className="text-white h-14 w-56 bg-[#6D8E6E] hover:bg-[#222A35]  focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Aceptar</button>
+            <button onClick={() => setModalShow(false)} className="text-white h-14 w-56 bg-[#6D8E6E] hover:bg-[#222A35]  focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Accept</button>
           </div>
         </div>
       </Modal>
@@ -120,7 +119,7 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-center gap-4 text-white p-10 " >
           <h2 > the fields are empty :´D </h2>
           <div className="flex gap-4 " >
-            <button onClick={() => setModalShow2(false)} className="text-white h-14 w-56 bg-red-700 hover:bg-[#222A35]  focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Aceptar</button>
+            <button onClick={() => setModalShow2(false)} className="text-white h-14 w-56 bg-red-700 hover:bg-[#222A35] focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Accept</button>
           </div>
         </div>
       </Modal>

@@ -19,7 +19,7 @@ const Presentation = () => {
             </div>
             <div className="buttons-About" >
                 <button className='button-contact' onClick={handleContact} >Contact me</button>
-                <a href='https://drive.google.com/file/d/1LYI8kwcQoQBjdLVm18t69bVfTpH0bGYB/view?usp=sharing' target='_blank' className='button-cv' >CV</a>
+                <a href='https://drive.google.com/file/d/1l5Pb7ZfBhoRwOpDryL4NEtvkkKLBOUXm/view?usp=sharing' target='_blank' className='button-cv' >CV</a>
             </div>
         </div>
         

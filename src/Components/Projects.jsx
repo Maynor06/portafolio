@@ -32,7 +32,8 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    } />
+                    } repo={null} />
+
                 <Card title={'Social Network API'} img={'./noctua.jpg'} description={'A personal project that aims to replicate and improve essential functionalities of a social network like Twitter'} body={
                     <div className="" >
                         <div className="flex flex-col gap-4 " >
@@ -75,8 +76,10 @@ const Projects = () => {
 
                         </div>
                     </div>
-                } />
-                <Card title={'Agricultural Farm Manager'} img={'./Agrottech.jpg'} description={'It is an application for managing a farm. The application allows administrators to manage activities, resources, and records related to daily operations.'} body={    
+                }
+                repo={"https://github.com/Maynor06/projectNoctua"}
+                />
+                <Card title={'Agricultural Farm Manager'} img={'./Agrottech.jpg'} repo={null} description={'It is an application for managing a farm. The application allows administrators to manage activities, resources, and records related to daily operations.'} body={    
                     <div>
                         <div className="flex flex-col gap-2 " >
                             <h2 className=" text-center text-xl font-semibold " >Features</h2>
@@ -102,7 +105,7 @@ const Projects = () => {
                         </div>
                     </div>
                     } />
-                <Card title={'Hotel Manager'} img={'./hotelAlura.png'} description={' It is a desktop application for hotel management where you can book rooms or view hotel statistics '} body={
+                <Card title={'Hotel Manager'} img={'./hotelAlura.png'} repo={"https://github.com/Maynor06/challenge-one-alura-hotel-latam"} description={' It is a desktop application for hotel management where you can book rooms or view hotel statistics '} body={
                 <div>
                     <div className="flex flex-col gap-2" >
                         <h2 className="font-semibold text-center text-xl" > Features </h2>
