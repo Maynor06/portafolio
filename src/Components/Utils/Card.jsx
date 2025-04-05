@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { ModalUtil } from "./ModalUtil"
 import './Card.css'
-import { GitHub } from "../iconos/icons"
+import { GitHub, GitHubBlack } from "../iconos/icons"
 import Modal from 'react-bootstrap/Modal';
 
 const Card = ({ title, description, img, body, repo }) => {
@@ -35,8 +35,8 @@ const Card = ({ title, description, img, body, repo }) => {
                     } >ver mas...</button>
 
                     {repo != null ? <a href={repo} target="_blank">
-                        <button className="size-8 "><GitHub /></button>
-                    </a> : <button onClick={handleModalShowGit} className="size-8 "><GitHub /></button>
+                        <button className="size-8 my-8 transform hover:scale-110 "><GitHubBlack /></button>
+                    </a> : <button onClick={handleModalShowGit} className="size-8 my-2 transform hover:scale-110 "><GitHubBlack /></button>
                     }
 
 
