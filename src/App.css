@@ -1,3 +1,5 @@
 body{
-    background-color: black;
+    background-color: #051F20;
+    font-family: var(--font-jetbrainsMono) !important;
+    text-decoration: inherit;
 }

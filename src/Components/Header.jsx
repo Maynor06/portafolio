@@ -22,17 +22,23 @@ const Header = () => {
     }
 
     return(
-         <div className="header  " >
-            <img src="logoMd.png" alt="logo Personal"/>
-            <button className='buttonMenu hidden' onClick={handleMenuShow} ><Menu/> </button>
-            <ul className={menuShow
-                ? 'sections ': 'sections2' } >      
-                <button className='hidden close' onClick={handleMenuClose} ><Close/></button>
-                <li> <a href="#about" onClick={handleMenuClose} >About me</a></li>
-                <li> <a href="#projects" onClick={handleMenuClose} >Projects</a></li>                
-                <li className='cursor-pointer ' ><a onClick={handleContact} >Contact me</a> </li>
-            </ul>
-        </div>
+         <nav className="header" >
+            <div className='name' >
+                <h2>Maynor David</h2>
+            </div>
+            <div className='navRigth' >
+               <ul className='sections' >
+                    <li className='sect'>Inicio</li>
+                    <li className='sect'>Proyectos</li>
+                    <li className='sect'>Resumen</li>
+                    <li className='sect'>Contacto</li>
+                </ul>
+                <div className='languaje' >
+                    <input type="text" />
+
+                </div>
+            </div>
+        </nav>
     )
 }
 

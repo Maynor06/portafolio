@@ -1,106 +1,85 @@
 
 .About{
-    width: 94%;
+    width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    justify-content: space-around;
 }
 
-.About img{
-    width: 260px;
+.photo {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #2f7d6b, #1c3c35); /* degradado más claro */
     border-radius: 100%;
-    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(4px); /* efecto vidriado */
+    box-shadow: 0 0 12px rgba(0, 255, 180, 0.4); /* brillo neón inicial */
 }
 
-.about-text {
+.photo:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    box-shadow: 0 0 20px rgba(0, 255, 180, 0.8); /* brillo más intenso */
+}
+
+.photo img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    image-rendering: pixelated; 
+}
+
+
+.about-text{
     color: aliceblue;
-    font-size: 16px;
+    text-align: left;
+    width: 35%;
+    font-size: 1.1rem;
 }
 
-.slogan{
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.rol {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
 }
 
-strong{
-    color: #FFD700;
+.saludo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
 }
 
-.slogan strong{
-    color: #32CD32;
+.saludo strong {
+    color: hsl(156deg 100% 50%);
+    font-weight: bold;
 }
 
+.eslogan {
+    margin-bottom: 1.25rem;
+}
 
-.buttons-About{
-    width: 30%;
-    height: 64px;
+.icons {
+    width: 200px;
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
-.buttons-About button{
-    width: 50%;
-    height: 60px;
-    border-radius: 35px;
-    font-weight: bold;
-    font-size: 18px;
+.linkedn, .github {
+    border: 1px solid hsl(156deg 100% 50%);
+    color: hsl(156deg 100% 50%);
+    padding: 7px;
+    border-radius: 100%;
 }
 
-.buttons-About a{
-    width: 50%;
-    height: 60px;
-    border-radius: 35px;
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buttons-About button:hover {
-    transition: 0.3s;
+.linkedn:hover, .github:hover {
     transform: scale(1.1);
+    transition: 1s;
+    color: #051F20;
+    border: #051F20;
+    background-color: hsl(156deg 100% 50%);
 }
-
-.buttons-About a:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-
-
-.button-contact{
-    background-color: aliceblue;
-    color: black;
-}
-
-.button-contact:active{
-    background-color: transparent;
-    color: aliceblue;
-}
-
-.button-cv{
-    background-color: transparent;
-    border: 2px solid white;
-    color: aliceblue;
-}
-
-.button-cv:active{
-    background-color: aliceblue;
-    color: black;
-}
-
-@media (max-width: 450px) {
-    .buttons-About{
-        width: 75%;
-    }
-  }
-
-

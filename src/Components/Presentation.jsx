@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './Presentation.css'
+import { GitHub, Linkedn } from './iconos/icons';
 
 const Presentation = () => {
 
@@ -9,19 +10,23 @@ const Presentation = () => {
     }
 
     return(
-        <div className="About" id='about' >
-            <img src="segunYo.jpg" alt="segun Yo" />
+        <section className="About" >
             <div className="about-text" >
-                <p className="slogan" ><strong>I develop</strong>  the basis that gives life to <br/> your <strong>projects</strong>.</p>
-                <p>¡Hi! I'm Maynor, <strong>a developer </strong> with experience in using <strong>Java, Spring Boot, and <br/>
-                Spring Security with JWT </strong> for token creation. I've participated in API development and have <br/> 
-                knowledge of clean architectures. I'm passionate about best development practices and efficiency in <br/> software delivery...</p>
+                <h3 className='rol' >Programador Full-Stack</h3>
+                <h1 className='saludo' >Hola soy <br/><strong>Maynor David</strong></h1>
+                <p className='eslogan' >Transformo ideas en experiencias digitales 
+                    impactantes, perfeccionando cada detalle con práctica 
+                    constante y pasión por inovar.
+                </p>
+                <div className='icons' >
+                    <a href="https://www.linkedin.com/in/maynor-semeya/" target='_blank' className='linkedn' ><Linkedn/></a>
+                    <a href="https://github.com/Maynor06" target='_blank' className='github' ><GitHub/></a>
+                </div>
             </div>
-            <div className="buttons-About" >
-                <button className='button-contact' onClick={handleContact} >Contact me</button>
-                <a href='https://drive.google.com/file/d/1l5Pb7ZfBhoRwOpDryL4NEtvkkKLBOUXm/view?usp=sharing' target='_blank' className='button-cv' >CV</a>
+            <div className='photo' >
+                <img src="segunYoxd.png" alt="segun Yo" />    
             </div>
-        </div>
+        </section>
         
     )
 }
