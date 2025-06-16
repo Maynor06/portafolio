@@ -1,40 +1,70 @@
-.experience-With{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.experience-With {
+    position: relative;
 }
 
-.title-experience{
-    width: 220px;
-    height: 30px;
-    font-size: 30px;
+.titleSection{
     color: aliceblue;
-    font-weight: 600;
-}
-
-.languajes{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
     margin-top: 2rem;
-    width: 35%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3rem;
 }
 
-.languajes li{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Línea horizontal superior */
+.line-horizontal {
+  width: 350px;
+  height: 2px;
+  background-color: #00ffc6;
+  margin-bottom: 0px;
+  position: relative;
+  margin: auto;
 }
 
-@media (max-width: 450px) {
-    .languajes{
-        width: 90%;
-    }
-  }
+/* Línea vertical entre la horizontal y la tarjeta */
+.line-vertical {
+  width: 2px;
+  height: 100%;
+  background-color: #00ffc6;
+  margin-bottom: 10px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  z-index: 0;
+}
 
+.container {
+    background-color: #0B2B26;
+    width: 300px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    margin-top: 3rem;
+    left: 13rem;
+}
+
+.date {
+    color: hsl(156deg 100% 50%);
+}
+
+.rolBussines {
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.nameBussines, .description {
+    color: hsla(0,0%,100%,.6);
+}
+
+.nameBussines {
+    margin-bottom: 0.5rem;
+}
+
+.container:hover {
+    transform: translateY(1deg);
+    transition: 3s;
+}

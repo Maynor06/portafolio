@@ -83,3 +83,30 @@
     border: #051F20;
     background-color: hsl(156deg 100% 50%);
 }
+
+@media (max-width: 1000px) {
+    .About {
+        flex-direction: column-reverse;
+    }
+    .photo {
+        width: 300px;
+        height: 300px;
+    }
+    .about-text{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .rol {
+        margin-bottom: 0.75rem;
+    }
+    .saludo {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+    }
+    .icons {
+        justify-content: center;
+        width: 100%;
+    }
+}
+  

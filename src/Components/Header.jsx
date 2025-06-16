@@ -7,27 +7,22 @@ const Header = () => {
     const navigate = useNavigate();
     const [menuShow, setMenuShow] = useState(false)
 
-    const handleContact = (e) => {
-        navigate('./contact')
-    }
-    const handleMenuShow = () => {
-        setMenuShow(true)
-        console.log(menuShow);
-        
-    }
-    const handleMenuClose = () => {
-        setMenuShow(false)
-        console.log(menuShow);
-        
+    const handleMunu = () => {
+        setMenuShow(!menuShow)
     }
 
     return(
          <nav className="header" >
             <div className='name' >
-                <h2>Maynor David</h2>
+                <h2>MD</h2>
             </div>
             <div className='navRigth' >
-               <ul className='sections' >
+                <ul className={menuShow ? 'sectionshiden': 'sections'} >
+                    
+                    <button className='close' >
+                        <Close /> 
+                    </button>
+                    <h3 className='lgMenu' >MD</h3>
                     <li className='sect'>Inicio</li>
                     <li className='sect'>Proyectos</li>
                     <li className='sect'>Resumen</li>
@@ -35,7 +30,9 @@ const Header = () => {
                 </ul>
                 <div className='languaje' >
                     <input type="text" />
-
+                </div>
+                <div className="iconMenu" onClick={handleMunu} >
+                    <Menu/>
                 </div>
             </div>
         </nav>
