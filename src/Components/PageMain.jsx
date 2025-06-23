@@ -2,7 +2,7 @@ import ExperienceLanguaje from "./ExperienceLanguaje"
 import Footer from "./Footer"
 import Header from "./Header"
 import Presentation from "./Presentation"
-import Projects from "./Projects"
+import Experience from "./Experience"
 
 const PageMain = () => {
 
@@ -11,7 +11,7 @@ const PageMain = () => {
             <Header/>
             <Presentation/>
             <ExperienceLanguaje/>
-            <Projects/>
+            <Experience/>
             <Footer/>
         </>
     )

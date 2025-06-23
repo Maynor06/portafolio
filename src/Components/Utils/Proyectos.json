@@ -1,0 +1,117 @@
+{
+  "proyecto1": {
+    "titulo": "Radio App",
+    "imagen": "./AppRadio.jpg",
+    "descripcion": "Es una aplicación donde puedes escuchar la transmisión en vivo de la radio y seguir el contenido que se emite en YouTube.",
+    "caracteristicas": {
+      "adicionales": [
+        "Escuchar la transmisión en vivo de la radio",
+        "Ver transmisiones en vivo de YouTube desde la app",
+        "Notificaciones cuando inicia una transmisión en YouTube para unirse al directo",
+        "Ver la última transmisión en vivo"
+      ]
+    },
+    "tecnologias": {
+      "frontend": [
+        "React Native: para la interfaz gráfica"
+      ],
+      "backend": [],
+      "baseDatos": [],
+      "adicionales": [
+        "Expo-av: para la reproducción de audio (transmisión)",
+        "YouTube API: para extraer transmisiones en vivo y videos",
+        "YouTube API Player: para reproducir los videos dentro de la app"
+      ]
+    },
+    "vistasPrevias": ["pantalla1.jpg", "pantalla2.jpg"],
+    "repositorio": null
+  },
+  "proyecto2": {
+    "titulo": "API de Red Social",
+    "imagen": "./noctua.jpg",
+    "descripcion": "Un proyecto personal que busca replicar y mejorar funciones esenciales de una red social como Twitter.",
+    "caracteristicas": {
+      "backend": [
+        "Registro con contraseñas encriptadas usando Spring Security y JWT",
+        "Autenticación segura con validación de tokens para proteger los datos"
+      ],
+      "adicionales": [
+        "Los usuarios pueden publicar contenido",
+        "Reaccionar a publicaciones",
+        "Comentar para fomentar la interacción",
+        "Mostrar publicaciones relevantes según la ubicación del usuario"
+      ]
+    },
+    "tecnologias": {
+      "backend": [
+        "Java: lenguaje principal para la API",
+        "Spring Boot: desarrollo backend ágil y eficiente",
+        "Spring Security + JWT: autenticación y autorización seguras"
+      ],
+      "baseDatos": [
+        "PostgreSQL: base de datos relacional para almacenar información"
+      ],
+      "frontend": [
+        "React: en desarrollo para una experiencia moderna e intuitiva"
+      ],
+      "adicionales": []
+    },
+    "vistasPrevias": [],
+    "repositorio": "https://github.com/Maynor06/projectNoctua"
+  },
+  "proyecto3": {
+    "titulo": "Gestor de Finca Agrícola",
+    "imagen": "./Agrottech.jpg",
+    "descripcion": "Aplicación para la gestión de una finca. Permite a los administradores controlar actividades, recursos y registros diarios.",
+    "caracteristicas": {
+      "adicionales": [
+        "Gestión de roles: diferentes funcionalidades según el rol del usuario",
+        "Gestión de productos: inventario según cosechas y ventas",
+        "Gestión de empleados: cálculo de pagos para cada trabajador"
+      ]
+    },
+    "tecnologias": {
+      "backend": [
+        "PHP: para el backend y creación de endpoints"
+      ],
+      "baseDatos": [
+        "MySQL: para la base de datos"
+      ],
+      "frontend": [
+        "React: para la interfaz gráfica"
+      ],
+      "adicionales": []
+    },
+    "vistasPrevias": [
+      "agroPrev1.png",
+      "agroPrev2.png",
+      "agroPrev3.png",
+      "agroPrev4.png",
+      "agroPrev5.png"
+    ],
+    "repositorio": null
+  },
+  "proyecto4": {
+    "titulo": "Gestor Hotelero",
+    "imagen": "./hotelAlura.png",
+    "descripcion": "Aplicación de escritorio para la gestión hotelera donde puedes reservar habitaciones y visualizar estadísticas.",
+    "caracteristicas": {
+      "adicionales": [
+        "Registrar nuevos clientes para realizar reservas",
+        "Ver estadísticas como número de reservas mensuales",
+        "Editar y eliminar reservas existentes"
+      ]
+    },
+    "tecnologias": {
+      "frontend": [],
+      "backend": [],
+      "baseDatos": [],
+      "adicionales": []
+    },
+    "vistasPrevias": [
+      "hotelPrev1.png",
+      "hotelPrev2.png"
+    ],
+    "repositorio": "https://github.com/Maynor06/challenge-one-alura-hotel-latam"
+  }
+}

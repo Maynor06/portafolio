@@ -1,0 +1,92 @@
+{
+  "proyecto1": {
+    "title": "Radio App",
+    "img": "./AppRadio.jpg",
+    "description": "It is an app where you can listen to the live broadcast of the Radio and follow the live broadcast they do on Youtube.",
+    "features": [
+      "Listen to the live broadcast of the Radio",
+      "View streams from YouTube in the app",
+      "Notify when a Stream starts on YouTube so that they can join the broadcast",
+      "View the last live broadcast"
+    ],
+    "technologies": [
+      "React Native: for creating the graphical interface",
+      "Expo-av: for playing the audio (radio broadcast)",
+      "YouTube API: for extracting live streams and videos from YouTube",
+      "YouTube API Player: for playing videos within the app"
+    ],
+    "previews": ["pantalla1.jpg", "pantalla2.jpg"],
+    "repo": null
+  },
+  "proyecto2": {
+    "title": "Social Network API",
+    "img": "./noctua.jpg",
+    "description": "A personal project that aims to replicate and improve essential functionalities of a social network like Twitter",
+    "features": {
+      "User Management": [
+        "User registration with encrypted passwords using Spring Security and JWT",
+        "Secure authentication with token validation to protect user data."
+      ],
+      "Content Creation": [
+        "Users can post content.",
+        "Ability to react to posts.",
+        "Comment on posts to encourage interaction."
+      ],
+      "Personalized Posts": [
+        "Users can see relevant posts based on their location."
+      ]
+    },
+    "technologies": {
+      "Backend": [
+        "Java: Main language for the API",
+        "Spring Boot: Framework for rapid and efficient backend development.",
+        "Spring Security + JWT: Password encryption and token management for authentication and authorization."
+      ],
+      "Database": [
+        "PostgreSQL: Relational database for structured information storage."
+      ],
+      "Frontend": [
+        "React: Currently working on the graphical interface for a modern and intuitive user experience."
+      ]
+    },
+    "repo": "https://github.com/Maynor06/projectNoctua"
+  },
+  "proyecto3": {
+    "title": "Agricultural Farm Manager",
+    "img": "./Agrottech.jpg",
+    "description": "It is an application for managing a farm. The application allows administrators to manage activities, resources, and records related to daily operations.",
+    "features": [
+      "Role Manager: Depending on the user's roles, it provides different functionalities within the page",
+      "Manage products: Based on the products sold and harvested, an inventory is created to know how much is available",
+      "Employee Manager: Farm managers can see how much to pay each employee"
+    ],
+    "technologies": [
+      "MySQL: for the project's database",
+      "PHP: for the backend and creating endpoints",
+      "React: For creating the graphical interface"
+    ],
+    "previews": [
+      "agroPrev1.png",
+      "agroPrev2.png",
+      "agroPrev3.png",
+      "agroPrev4.png",
+      "agroPrev5.png"
+    ],
+    "repo": null
+  },
+  "proyecto4": {
+    "title": "Hotel Manager",
+    "img": "./hotelAlura.png",
+    "description": "It is a desktop application for hotel management where you can book rooms or view hotel statistics.",
+    "features": [
+      "Create records for new clients so they can make reservations",
+      "View hotel statistics such as the number of reservations this month, etc.",
+      "Edit, delete reservations"
+    ],
+    "previews": [
+      "hotelPrev1.png",
+      "hotelPrev2.png"
+    ],
+    "repo": "https://github.com/Maynor06/challenge-one-alura-hotel-latam"
+  }
+}

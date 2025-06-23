@@ -1,36 +1,102 @@
-
-.projects{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-left: auto;
+.projects-section {
+  position: relative;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
 }
 
-.projects h2{
-    color: aliceblue;
-    font-size: 2rem;
-    font-weight: 500;
+.projects-timeline-line {
+  height: 2px;
+  width: 280px;
+  background-color: #00ffc6;
+  margin: 0 auto 3rem;
 }
 
-.projects-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-@media (max-width: 1300px) {
-    .projects{
-        width: 80%;
-    }
-  }
+.project-card {
+  background-color: #0B2B26;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
 
-  @media (max-width: 450px) {
-    .projects{
-        width: 90%;
-    }
-  }
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 255, 198, 0.2);
+}
+
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #00ffc6;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: hsla(0, 0%, 100%, 0.8);
+  margin: 0.5rem 0 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #042822;
+  color: #00ffc6;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.project-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.project-preview img {
+  width: 45%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.btn-repo {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #00ffc6;
+  border-radius: 8px;
+  color: #00ffc6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-repo:hover {
+  background-color: #00ffc622;
+}

@@ -1,5 +1,6 @@
 .experience-With {
     position: relative;
+    margin-top: 8rem;
 }
 
 .titleSection{
@@ -33,6 +34,12 @@
   z-index: 0;
 }
 
+.contain{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
 .container {
     background-color: #0B2B26;
     width: 300px;
@@ -43,7 +50,7 @@
     position: relative;
     z-index: 1;
     margin-top: 3rem;
-    left: 13rem;
+    margin-right: auto;
 }
 
 .date {
@@ -65,6 +72,21 @@
 }
 
 .container:hover {
-    transform: translateY(1deg);
-    transition: 3s;
+    transition: transform 0.3s ease;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 255, 198, 0.3);
+}
+
+.aptitudes{
+    background-color: #0B2B26;
+    width: 300px;
+    position: relative;
+    margin-left: auto;
+    border-radius: 25px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.aptitudes h3 {
+    color: hsl(156deg 100% 50%);
 }
