@@ -19,14 +19,74 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.containProy{
+    display: flex;
+    position: relative;
+    left: 5%;
+    gap: 5rem;
+}
+
+.containProy1{
+    display: flex;
+    position: relative;
+    left: 15%;
+    gap: 5rem;
 }
 
 .proyect {
-    border: 2px solid aliceblue;
+    border: 1px solid hsl(156deg 100% 50%);
     border-radius: 25px;
     padding: 10px;
-    width: 50%;
+    width: 70%;
+    height: auto;              /* O elimina height fijo si quieres que crezca con el contenido */
+    min-height: 350px;         /* Altura mínima para mantener consistencia visual */
     margin-left: auto;
     margin-right: auto;
     background-color: #0b2b26;
+    display: flex;
+    flex-direction: column;    /* Para que descripción y carrusel queden uno encima del otro en móviles */
+    align-items: center;
+    gap: 1rem;
 }
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 35%;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.viewPrev {
+    width: 150px;
+}
+.prev {
+    width: 350px;
+}
+
+@media (max-width: 768px) {
+    .containProy {
+        flex-direction: column;
+        left: 0;
+        gap: 2rem;
+    }
+    .description {
+        width: 100%;
+    }
+    .carrusel {
+        width: 100%;
+    }
+}
+

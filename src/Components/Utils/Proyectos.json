@@ -23,7 +23,7 @@
         "YouTube API Player: para reproducir los videos dentro de la app"
       ]
     },
-    "vistasPrevias": ["pantalla1.jpg", "pantalla2.jpg"],
+    "vistasPrevias": ["pantalla2.jpg"],
     "repositorio": null
   },
   "proyecto2": {
@@ -56,7 +56,7 @@
       ],
       "adicionales": []
     },
-    "vistasPrevias": [],
+    "vistasPrevias": ["noctua.jpg"],
     "repositorio": "https://github.com/Maynor06/projectNoctua"
   },
   "proyecto3": {
