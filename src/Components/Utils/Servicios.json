@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Páginas Web",
+    "descripcion": "Creación de páginas web para darte a conocer o para crear tu tienda en línea.",
+    "icono": "Page"
+  },
+  {
+    "titulo": "Desarrollo Web",
+    "descripcion": "Creación de aplicaciones y sistemas web, controla tu negocio o emprendimiento desde cualquier lugar y cualquier dispositivo.",
+    "icono": "Code"
+  },
+  {
+    "titulo": "Desarrollo de Apps",
+    "descripcion": "Diseño y creación de aplicaciones móviles para ti o para tus clientes, todo desde la comodidad de tu teléfono celular.",
+    "icono": "Android"
+  }
+]

@@ -14,7 +14,7 @@ const Header = () => {
     return(
          <nav className="header" >
             <div className='name' >
-                <h2>MD</h2>
+                <img src="logoMd.png" alt="logoPersonal"/>
             </div>
             <div className='navRigth' >
                 <ul className={menuShow ? 'sectionshiden': 'sections'} >

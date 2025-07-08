@@ -11,18 +11,10 @@
         "Ver la última transmisión en vivo"
       ]
     },
-    "tecnologias": {
-      "frontend": [
-        "React Native: para la interfaz gráfica"
-      ],
-      "backend": [],
-      "baseDatos": [],
-      "adicionales": [
-        "Expo-av: para la reproducción de audio (transmisión)",
-        "YouTube API: para extraer transmisiones en vivo y videos",
-        "YouTube API Player: para reproducir los videos dentro de la app"
-      ]
-    },
+    "tecnologias": [
+      "React Native",
+      "API Youtube"
+    ],
     "vistasPrevias": ["pantalla2.jpg"],
     "repositorio": null
   },
@@ -42,20 +34,15 @@
         "Mostrar publicaciones relevantes según la ubicación del usuario"
       ]
     },
-    "tecnologias": {
-      "backend": [
-        "Java: lenguaje principal para la API",
-        "Spring Boot: desarrollo backend ágil y eficiente",
-        "Spring Security + JWT: autenticación y autorización seguras"
-      ],
-      "baseDatos": [
-        "PostgreSQL: base de datos relacional para almacenar información"
-      ],
-      "frontend": [
-        "React: en desarrollo para una experiencia moderna e intuitiva"
-      ],
-      "adicionales": []
-    },
+    "tecnologias": [
+      "React",
+      "Java",
+      "Spring Boot",
+      "Tailwind",
+      "JavasCript",
+      "PostgreSQL"
+
+    ],
     "vistasPrevias": ["noctua.jpg"],
     "repositorio": "https://github.com/Maynor06/projectNoctua"
   },
@@ -70,18 +57,12 @@
         "Gestión de empleados: cálculo de pagos para cada trabajador"
       ]
     },
-    "tecnologias": {
-      "backend": [
-        "PHP: para el backend y creación de endpoints"
-      ],
-      "baseDatos": [
-        "MySQL: para la base de datos"
-      ],
-      "frontend": [
-        "React: para la interfaz gráfica"
-      ],
-      "adicionales": []
-    },
+    "tecnologias": [
+      "Java", 
+      "React",
+      "Tailwind",
+      "MySQL"
+    ],
     "vistasPrevias": [
       "agroPrev1.png",
       "agroPrev2.png",
@@ -102,12 +83,10 @@
         "Editar y eliminar reservas existentes"
       ]
     },
-    "tecnologias": {
-      "frontend": [],
-      "backend": [],
-      "baseDatos": [],
-      "adicionales": []
-    },
+    "tecnologias": [
+      "Java", 
+      "MySQL"
+    ],
     "vistasPrevias": [
       "hotelPrev1.png",
       "hotelPrev2.png"

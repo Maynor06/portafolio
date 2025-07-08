@@ -1,4 +1,4 @@
-import { Css, Git, Html, Java, Javascript, MySQL, React, SpringBoot, Tailwind } from "./iconos/icons";
+import { Net, Next, React, SqlServer, Vb } from "./iconos/icons";
 import './ExperienceLanguaje.css'
 
 const ExperienceLanguaje = () => {
@@ -6,8 +6,8 @@ const ExperienceLanguaje = () => {
     return(
         <div className="experience-With">
             <h2 className="titleSection" >Experiencia</h2>
-            <div class="line-horizontal"></div>
-            <div class="line-vertical"></div>
+            <div className="line-horizontal"></div>
+            <div className="line-vertical"></div>
             <div className="contain" >
                 <div className="container" >
                     <div className="info" >
@@ -15,19 +15,40 @@ const ExperienceLanguaje = () => {
                         <p className="rolBussines" >Desarrollador Full-Stack</p>
                         <p className="nameBussines" >Guatemala Digital</p>
                     </div>
-                    <div className="description" >
-                        <p className="description" >
+                    <div  >
+                        <p >
                             Desarrollar y mantener código de calidad en colaboración con el equipo de desarrollo.
                             Participar en proyectos y tareas asignadas, asegurando el cumplimiento de los plazos y estándares establecidos.
                         </p>
                     </div>
                 </div>
                 <div className="aptitudes" >
-                    <h3>Tecnologias utilizadas:</h3>
-                    <React/>
+                    <h3>Tecnologias utilizadas</h3>
+                    <div className="iconsAptitudes" >
+                        <span className="iconAptitudes" >
+                            <React/> React
+                        </span>
+                        <span className="iconAptitudes" >
+                            <Vb/>
+                            visual basic
+                        </span>
+                        <span className="iconAptitudes" >
+                            <Net/>
+                        </span>
+                    </div>
+                    <div className="iconsAptitudes" >
+                        <span className="iconAptitudes" >
+                            <SqlServer/>
+                            Sql Server
+                        </span>
+                        <span className="iconAptitudes" >
+                            <Next/>
+                            Next
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="line-vertical-bottom"></div>
+            <div className="line-vertical-bottom"></div>
         </div>
     )
 }

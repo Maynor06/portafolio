@@ -1,0 +1,56 @@
+.containService {
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.serviTitle{
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+.slogan{
+    font-weight: 700;
+    color: gray;
+}
+.containerServicio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.servicio {
+    width: 43%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px #0b2b26; 
+}
+
+.servicio h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(156deg 100% 50%);
+}
+.servicio svg {
+    width: 50px;
+    color: hsl(156deg 100% 50%);
+}
+
+.servicio:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 255, 198, 0.3);
+
+}

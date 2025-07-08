@@ -3,6 +3,8 @@ import Footer from "./Footer"
 import Header from "./Header"
 import Presentation from "./Presentation"
 import Experience from "./Experience"
+import Servicios from "./Servicios"
+import Contact from "./Contact"
 
 const PageMain = () => {
 
@@ -12,6 +14,8 @@ const PageMain = () => {
             <Presentation/>
             <ExperienceLanguaje/>
             <Experience/>
+            <Servicios/>
+            <Contact/>
             <Footer/>
         </>
     )

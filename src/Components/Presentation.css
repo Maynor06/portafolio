@@ -11,12 +11,12 @@
 .photo {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, #2f7d6b, #1c3c35); /* degradado más claro */
+    background: radial-gradient(circle, #2f7d6b, #1c3c35); 
     border-radius: 100%;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(4px); /* efecto vidriado */
+    backdrop-filter: blur(4px); 
     box-shadow: 0 0 12px rgba(0, 255, 180, 0.4); /* brillo neón inicial */
 }
 

@@ -88,12 +88,10 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
-      <button className="relative left-[15%] w-10 hover:bg-transparent hover:transition-transform hover:scale-110 back  " onClick={handleHome} ><Arrow /></button>
       <div className="contact" >
         <div className="contact-con" >
-          <h2  >Contact me</h2>
-          <p>Tell me what your project is about</p>
+          <h2  >Contáctame</h2>
+          <p>hablame acerca de tu projecto</p>
           <form ref={form} onSubmit={sendEmail} className="formSent" >
             <div className="personal-data" >
               <input type="text" placeholder="name" name="name" value={dataform.name} onChange={handleInputData} />
@@ -101,12 +99,13 @@ const Contact = () => {
             </div>
             <input className="asunto" type="text" placeholder="Subject" name="asunto" value={dataform.asunto} onChange={handleInputData} />
             <textarea className="message" type="text" placeholder="Message" name="message" value={dataform.message} onChange={handleInputData} />
-            <button className="sent" type="submit">Sent</button>
+            <div className="containerButton" >
+              <button className="sent" type="submit">Sent</button>
+            </div>
           </form>
         </div>
       </div>
-      <Footer />
-
+      
       <Modal show={modalShow} onHide={() => setModal(false)} centered data-bs-theme="dark"  >
         <div className="flex flex-col justify-center items-center gap-4 text-white p-10 " >
           <h2> the email is sent with success!! :3 </h2>
