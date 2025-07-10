@@ -28,7 +28,7 @@ export const Experience = () => {
                 {Object.values(proyectos).map((proyecto, index) => {
                     return (
                         <div className={(index % 2) === 0 ? 'proyect' : 'proyect'} key={index}>
-                            <div className={index === 0 ? 'containProy1' : 'containProy'} >
+                            <div className={index % 2 === 0 ? 'containProy1' : 'containProy'} >
                                 <div className='description' >
                                     <h2>{proyecto.titulo} </h2>
                                     <p>{proyecto.descripcion}</p>

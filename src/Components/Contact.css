@@ -1,13 +1,18 @@
+.contain-contact {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .contact {
     position: relative;
-    width: 70%;
-    background-color: #051F20;
-    margin: auto;
-    border-radius: 30px;
-    border: 1px solid hsl(156deg 100% 50%);
+    width: 55%;
+    background-color:#0b2b26;
+    border-radius: 15px;
     box-shadow: white;
-    height: 73vh;
-    margin-top: 2rem;
+    height: 75vh;
 }
 
 .contact-con{
@@ -23,17 +28,22 @@
 .contact h2{
     position: relative;
     color: hsl(156deg 100% 50%);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;
 }
 
 .contact p{
-    color: aliceblue;
+    color: hsla(0, 0%, 100%, .6);
     font-size: 1rem;
+    text-align: center;
+    width: 80%;
+}
+.duda:hover{
+    border-bottom: 2px solid hsl(156deg 100% 50%);
 }
 
 .formSent{
-    width: 85%;
+    width: 100%;
 }
 
 .personal-data{
@@ -49,10 +59,9 @@
 .personal-data input{
     width: 46%;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
     color: white;
-    background-color: #0b2b26;
     border: none;
 }
 
@@ -61,7 +70,7 @@
     position: relative;
     left: 8%;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 1rem;
     padding: 10px;
     color: aliceblue;
@@ -72,7 +81,7 @@
     position: relative;
     left: 8%;
     margin-top: 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
     color: aliceblue;
     height: 25vh;
@@ -93,20 +102,51 @@
     font-weight: 600;
     width: 80px;
     height: 35px;
-    border-radius: 15px;
+    border-radius: 8px;
+}
+.formas-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.containerCon {
+    display: flex;
+    align-items: center;
+}
+.iconContainer {
+    background-color: #0b2b26;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.containerCon svg {
+    width: 60px;
+    height: 60px;
+    color: hsl(156deg 100% 50%);
+}
+.containerCon a{
+    position: relative;
+    left: 1.5rem;
+    font-size:1.1rem;
+    color: hsla(0, 0%, 100%, .6);
 }
 
 .sent:hover{
     background-color: aqua;
 }
 .formSent input {
-    background-color: #0b2b26;
+    background-color: #051F20;
     border: none;
 }
 .formSent textarea {
-    background-color: #0b2b26;
-    border: none;
+  background-color: #051F20;
+  border: none;
+  resize: none;
 }
+
 
 @media (max-width: 600px) {
     .contact {

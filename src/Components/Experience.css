@@ -34,6 +34,10 @@
   width: 100%;
 }
 
+.containProy1 {
+    flex-direction: row-reverse;
+}
+
 .containProy1 .carrusel {
     width: auto;
 }
@@ -80,9 +84,6 @@
 .viewPrev {
     width: 150px;
 }
-.prev {
-    width: 400px;
-}
 
 .tecnologias h2 {
   color: #A0FFD0;
@@ -126,7 +127,8 @@
 }
 
 @media (max-width: 768px) {
-    .containProy {
+    .containProy, 
+    .containProy1 {
         flex-direction: column;
         left: 0;
         gap: 2rem;
@@ -134,8 +136,14 @@
     .description {
         width: 100%;
     }
-    .carrusel {
+    .carrusel, 
+    .prev {
         width: 100%;
+    }
+    .carrusel img {
+        height: 260px;
+        object-fit: contain;
+        border-radius: 12px;
     }
 }
 

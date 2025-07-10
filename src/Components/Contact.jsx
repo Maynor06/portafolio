@@ -3,9 +3,11 @@ import Header from "./Header";
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
-import { Arrow } from "./iconos/icons";
+import ContactJson from './Utils/Contact.json'
 import { useNavigate } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
+import { GitHub, Gps, Linke, Linkedn } from "./iconos/icons";
+import { GpsFixed } from "@mui/icons-material";
 
 
 const Contact = () => {
@@ -26,6 +28,11 @@ const Contact = () => {
     const { name, value } = e.target
     setDataForm({ ...FormData, [name]: value });
   }
+  const iconMapper = {
+    "GitHub": <GitHub/>,
+    "Linkedin": <Linke/>,
+    "Gps": <Gps/>
+  };
 
 
   const validateForm = () => {
@@ -87,11 +94,11 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <div className="contain-contact" >
       <div className="contact" >
         <div className="contact-con" >
-          <h2  >Contáctame</h2>
-          <p>hablame acerca de tu projecto</p>
+          <h2>Llevemos tu proyecto al siguiente nivel.</h2>
+          <p className="duda" >¿Tienes alguna pregunta, propuesta o simplemente quieres saludar? No dudes en escribir.</p>
           <form ref={form} onSubmit={sendEmail} className="formSent" >
             <div className="personal-data" >
               <input type="text" placeholder="name" name="name" value={dataform.name} onChange={handleInputData} />
@@ -104,6 +111,18 @@ const Contact = () => {
             </div>
           </form>
         </div>
+      </div>
+      <div className="formas-contact" >
+        {ContactJson.map( contact => {
+          return (
+            <div className="containerCon" >
+                <span className="iconContainer" >
+                  {iconMapper[contact.icono]}
+                </span>
+              <a href={contact.link}>{contact.name}</a>
+            </div>
+          )
+        } ) }
       </div>
       
       <Modal show={modalShow} onHide={() => setModal(false)} centered data-bs-theme="dark"  >
@@ -122,7 +141,7 @@ const Contact = () => {
           </div>
         </div>
       </Modal>
-    </>
+    </div>
   )
 }
 

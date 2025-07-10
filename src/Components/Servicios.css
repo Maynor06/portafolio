@@ -54,3 +54,9 @@
     box-shadow: 0 8px 20px rgba(0, 255, 198, 0.3);
 
 }
+
+@media (max-width: 600px) {
+    .servicio {
+      width: 100%;
+    }
+  }
