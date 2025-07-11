@@ -12,9 +12,9 @@ const PageMain = () => {
         <>
             <Header/>
             <Presentation/>
+            <Servicios/>
             <ExperienceLanguaje/>
             <Experience/>
-            <Servicios/>
             <Contact/>
             <Footer/>
         </>
