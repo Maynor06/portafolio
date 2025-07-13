@@ -10,7 +10,7 @@ const Presentation = () => {
     }
 
     return(
-        <section className="About" >
+        <section className="About" id='About' >
             <div className="about-text" >
                 <h3 className='rol' >Programador Full-Stack</h3>
                 <h1 className='saludo' >Hola soy <br/><strong>Maynor David</strong></h1>

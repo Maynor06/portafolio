@@ -95,7 +95,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 className="cont" >Contactame :D</h1>
+      <h1 className="cont" id="contacto" >Contactame :D</h1>
       <div className="contain-contact" >
         <div className="contact" >
           <div className="contact-con" >
@@ -117,7 +117,7 @@ const Contact = () => {
         <div className="formas-contact" >
           {ContactJson.map( contact => {
             return (
-              <div className="containerCon" >
+              <div className="containerCon" id="#contacto" >
                 <a href={contact.link} target="_blank">
                   <span className="iconContainer" >
                     {iconMapper[contact.icono]}

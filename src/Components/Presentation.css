@@ -17,13 +17,13 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     backdrop-filter: blur(4px); 
-    box-shadow: 0 0 12px rgba(0, 255, 180, 0.4); /* brillo neón inicial */
+    box-shadow: 0 0 12px rgba(0, 255, 180, 0.4); 
 }
 
 .photo:hover {
     transform: scale(1.05);
     transition: 1s;
-    box-shadow: 0 0 20px rgba(0, 255, 180, 0.8); /* brillo más intenso */
+    box-shadow: 0 0 20px rgba(0, 255, 180, 0.8); 
 }
 
 .photo img {

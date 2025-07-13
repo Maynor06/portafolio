@@ -13,7 +13,7 @@ const Servicios = () => {
     };
     
     return(
-        <div className='containService' >
+        <div className='containService' id='Servicios' >
             <h2 className='serviTitle'>Servicios</h2>
             <p className='slogan' >Desde soporte técnico, hasta la creación e implementación de sistemas y proyectos de gran escala.</p>
             <div className='containerServicio' >

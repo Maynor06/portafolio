@@ -22,7 +22,7 @@ export const Experience = () => {
 
 
     return (
-        <div className='experience' >
+        <div className='experience' id='Proyectos' >
             <h2>PROYECTOS</h2>
             <div className='projects-container' >
                 {Object.values(proyectos).map((proyecto, index) => {

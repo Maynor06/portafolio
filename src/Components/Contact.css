@@ -46,10 +46,6 @@
     text-align: center;
     width: 80%;
 }
-.link:hover{
-    border-bottom: 2px solid hsl(156deg 100% 50%);
-}
-
 .formSent{
     width: 100%;
 }
@@ -123,8 +119,26 @@
     align-items: center;
 }
 .link {
-    margin-left: 1.5rem;
-    color: hsla(0, 0%, 100%, .6);
+  position: relative;
+  margin-left: 1.5rem;
+  color: hsla(0, 0%, 100%, .6);
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: hsl(156deg 100% 50%);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .iconContainer {
@@ -164,11 +178,24 @@
     .contact {
       width: 90%;
       height: 75vh;
+      margin-left: auto;
+      margin-right: auto;
     }
     .back{
         left: 4%;
         display: flex;
         top: -20px;
+    }
+    .contain-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .contain-contact h2 {
+        text-align: center;
+    }
+    .formas-contact {
+        display: none;
     }
   }
   

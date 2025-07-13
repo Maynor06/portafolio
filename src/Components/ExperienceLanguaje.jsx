@@ -49,6 +49,9 @@ const ExperienceLanguaje = () => {
                 </div>
             </div>
             <div className="line-vertical-bottom"></div>
+            <div className="expContact" >
+                <a className="expContact" href="https://drive.google.com/file/d/1LN2Pmif1JJ7ElevKiqlYWxw5FunWBmTZ/view?usp=sharing" target="_blank" >Descarga CV :D</a>
+            </div>
         </div>
     )
 }
