@@ -172,9 +172,64 @@
   border: none;
   resize: none;
 }
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modalButtonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.modalButton {
+  color: white;
+  height: 3.5rem;
+  width: 14rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalButton.accept {
+  background-color: #6D8E6E;
+}
+
+.modalButton.accept:hover {
+  background-color: #222A35;
+}
+
+.modalButton.error {
+  background-color: #b91c1c; /* rojo fuerte */
+}
+
+.modalButton.error:hover {
+  background-color: #222A35;
+}
+
+@media (max-width: 480px) {
+  .modalButton {
+    width: 10rem;
+  }
+}
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .contact {
       width: 90%;
       height: 75vh;

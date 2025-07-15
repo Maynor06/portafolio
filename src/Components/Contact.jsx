@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
@@ -7,7 +5,6 @@ import ContactJson from './Utils/Contact.json'
 import { useNavigate } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
 import { GitHub, Gps, Linke, Linkedn } from "./iconos/icons";
-import { GpsFixed } from "@mui/icons-material";
 
 
 const Contact = () => {
@@ -115,9 +112,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="formas-contact" >
-          {ContactJson.map( contact => {
+          {ContactJson.map( (contact, index) => {
             return (
-              <div className="containerCon" id="#contacto" >
+              <div key={index} className="containerCon" id="#contacto" >
                 <a href={contact.link} target="_blank">
                   <span className="iconContainer" >
                     {iconMapper[contact.icono]}
@@ -129,22 +126,26 @@ const Contact = () => {
           } ) }
         </div>
         
-        <Modal show={modalShow} onHide={() => setModal(false)} centered data-bs-theme="dark"  >
-          <div className="flex flex-col justify-center items-center gap-4 text-white p-10 " >
-            <h2> El correo fue enviado con exito!! :3 </h2>
-            <div className="flex gap-4 " >
-              <button onClick={() => setModalShow(false)} className="text-white h-14 w-56 bg-[#6D8E6E] hover:bg-[#222A35]  focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Accept</button>
-            </div>
+      <Modal show={modalShow} onHide={() => setModalShow(false)} centered data-bs-theme="dark">
+        <div className="modalContent">
+          <h2 className="modalTitle">¡El correo fue enviado con éxito! :3</h2>
+          <div className="modalButtonGroup">
+            <button onClick={() => setModalShow(false)} className="modalButton accept">
+              Accept
+            </button>
           </div>
-        </Modal>
-        <Modal show={modalShow2} onHide={() => setModal2(false)} title="ERROR" centered data-bs-theme="dark" >
-          <div className="flex flex-col justify-center items-center gap-4 text-white p-10 " >
-            <h2 > los campos estan vacíos :´D </h2>
-            <div className="flex gap-4 " >
-              <button onClick={() => setModalShow2(false)} className="text-white h-14 w-56 bg-red-700 hover:bg-[#222A35] focus:ring-green-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 phone:w-min " >Accept</button>
-            </div>
+        </div>
+      </Modal>
+      <Modal show={modalShow2} onHide={() => setModalShow2(false)} centered data-bs-theme="dark">
+        <div className="modalContent">
+          <h2 className="modalTitle">¡Los campos están vacíos! :´D</h2>
+          <div className="modalButtonGroup">
+            <button onClick={() => setModalShow2(false)} className="modalButton error">
+              Accept
+            </button>
           </div>
-        </Modal>
+        </div>
+      </Modal>
       </div>
     </>
   )

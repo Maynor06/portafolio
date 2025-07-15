@@ -1,5 +1,4 @@
 import servicios from './Utils/Servicios.json'
-import Icon from '@mui/material/Icon';
 import './Servicios.css'
 import { Android, Code, Page } from './iconos/icons';
 
@@ -22,7 +21,7 @@ const Servicios = () => {
                         {iconMapper[servicio.icono]}
                         <h2>{servicio.titulo} </h2>
                         <p>{servicio.descripcion}</p>
-                        <button>Cotiza</button>
+                        <a href='#contacto' className='contactame' >Contactame</a>
                     </div>
                 )  )}
             </div>

@@ -9,7 +9,6 @@ export const Experience = () => {
         "Java": <Java />,
         "React": <React />,
         "GitHub": <GitHub/>,
-        "MySQL": <MySQL />,
         "Tailwind": <Tailwind />,
         "Spring Boot": <SpringBoot />,
         "Git": <Git />,
