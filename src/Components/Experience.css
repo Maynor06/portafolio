@@ -147,3 +147,12 @@
     }
 }
 
+@media (max-width: 480px) {
+  .containProy1{
+    justify-content: center;
+    align-items: center;
+  }
+  .iconsExp {
+    flex-wrap: wrap;
+  }
+}

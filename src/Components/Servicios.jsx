@@ -21,7 +21,7 @@ const Servicios = () => {
                         {iconMapper[servicio.icono]}
                         <h2>{servicio.titulo} </h2>
                         <p>{servicio.descripcion}</p>
-                        <a href='#contacto' className='contactame' >Contactame</a>
+                        <a href='https://wa.link/0iy5ic' className='contactame' target='_blank' >Contactame</a>
                     </div>
                 )  )}
             </div>

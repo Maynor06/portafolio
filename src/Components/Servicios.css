@@ -64,7 +64,24 @@
 }
 
 @media (max-width: 600px) {
+    .serviTitle {
+        font-size: 2rem;
+    }
+    .slogan {
+        font-size: 1rem;
+    }
     .servicio {
       width: 100%;
+    }
+    .servicio h2{
+        font-size: 1rem;
+    }
+    .servicio p {
+        font-size: 15px
+    }
+    .contactame {
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
     }
   }

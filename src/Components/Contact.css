@@ -226,6 +226,9 @@
   .modalButton {
     width: 10rem;
   }
+  .personal-data input {
+    width: 135px;
+  }
 }
 
 
@@ -253,4 +256,13 @@
         display: none;
     }
   }
-  
+
+  @media (max-width: 380px) {
+    .contact {
+      width: 90%;
+      height: 100vh;
+    }
+    .cont {
+      font-size: 2rem;
+    }
+  }
